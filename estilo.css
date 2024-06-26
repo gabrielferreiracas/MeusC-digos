@@ -47,6 +47,7 @@ ul{
 
 ul li.item-menu:hover{
     background-color: #daa520;
+    border-radius: 10px;
 }
 
 ul li.item-menu a{
