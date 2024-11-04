@@ -1,12 +1,135 @@
+ 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ 
+body{
+    background-color: #0b4e6b;
+    
 }
 
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+ 
+.logo{
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+ 
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: .3s;
+}
+ 
+.navbar a:hover,
+.navbar a.active{
+   color: #7bcdee;
+}
+ 
+.flex{
+    display: flex;
+}
+.texto{
+    
+    margin-top: 305px;
+    margin-left: 250px;
+}
 
-.container{
-    position: absolute; 
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
+.titulo{
+    font-size: 40px;
+    font-weight: 600;
+    color: #7bcdee;
+}
+
+.subt{
+    font-size: 25px;
+    color: #7bcdee;
+}
+
+.parag1,.parag2 {
+    font-size: 17px;
+    color: #fff;
+}
+
+/* From Uiverse.io by alexmaracinaru */ 
+.btntexto {
+    border: none;
+    background: none;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .btntexto span {
+    padding-bottom: 7px;
+    
+    font-size: 18px;
+    padding-right: 15px;
+    font-weight: 500;
+    
+  }
+     
+
+  .hover-underline-animation {
+    position: relative;
+    color: #7bcdee;
+    padding-bottom: 20px;
+  }
+  
+  .hover-underline-animation:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #7bcdee;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .btntexto:hover .hover-underline-animation:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  
+.imginicio img{
+    width: 230px;
+    height: 230px;
+    margin-left: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 275px;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    position: relative; 
+}
+
+@keyframes flutuar {
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 20px;
+    }
+
 }
