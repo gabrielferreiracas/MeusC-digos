@@ -172,3 +172,38 @@ header{
     margin-top: 252px;
 }
 
+.experiencias{
+ margin-top: 252px;
+}
+
+
+.texperie{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.cards{
+    padding: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    
+}
+
+.card img{
+    width: 205px;
+    align-items: center;
+    margin-left: 5px;
+    
+}
+
+.card{
+    width: 215px;
+}
+
+.card p{
+    align-items: center;
+}
