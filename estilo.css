@@ -190,6 +190,9 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin-left: 450px;
+    margin-top: 40px;
+    ;
     
     
     
@@ -204,6 +207,20 @@ header{
 
 .card{
     width: 215px;
+    background-color: #000000;
+    color: rgba(255, 255, 255, 0.788);
+}
+
+.tprojetos{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.cardprojeto{
+    width: 270px;
+    height: 150px;
     background-color: #000000;
 }
 
