@@ -53,7 +53,7 @@ header{
 .texto{
     
     margin-top: 305px;
-    margin-left: 250px;
+    margin-left: 300px;
 }
 
 .titulo{
@@ -117,7 +117,7 @@ header{
 .imginicio img{
     width: 230px;
     height: 230px;
-    margin-left: 300px;
+    margin-left: 500px;
     border-radius: 50%;
     object-fit: cover;
     margin-top: 275px;
@@ -186,24 +186,24 @@ header{
 
 .cards{
     padding: 55px;
+    width: 1000px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     
     
+    
 }
 
 .card img{
-    width: 205px;
+    width: 190px;
     align-items: center;
-    margin-left: 5px;
+    margin-left: 12px;
     
 }
 
 .card{
     width: 215px;
+    background-color: #000000;
 }
 
-.card p{
-    align-items: center;
-}
