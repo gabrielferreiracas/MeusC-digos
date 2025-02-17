@@ -1,0 +1,24 @@
+create database db_literatura_gabriel_ferreira;
+use  db_literatura_gabriel_ferreira;
+
+create table tb_autor(
+cd_autor_gabriel_ferreira int primary key auto_increment,
+nm_autor varchar(45)
+);
+
+ create table tb_categoria(
+cd_categoria_gabriel int primary key auto_increment,
+nm_categoria varchar(20),
+ds_categoria longtext
+);
+
+create table tb_livro(
+isbn_gabriel char(13) primary key,
+nm_livro varchar(50) not null,
+nm_editora varchar(30) not null,
+qt_paginas int ,
+nr_ediçao int,
+aa_edicao year,
+fk_cd_autor_gabriel int,
+foreign key (fk_cd_autor_gabriel) references tb_autor(cd_autor_gabriel_ferreira)
+);
