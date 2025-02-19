@@ -1,0 +1,8 @@
+cd desktop;
+md projeto;
+cd projeto;
+git config --global name.user Gabriel;
+git config --global name.email gabriel.castro98@etec.sp.gov.br;
+git clone link_do_repositorio;
+cd repositoriname;
+code .
