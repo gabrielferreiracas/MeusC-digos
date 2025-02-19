@@ -6,3 +6,7 @@ git config --global name.email gabriel.castro98@etec.sp.gov.br;
 git clone link_do_repositorio;
 cd repositoriname;
 code .
+depois dos códigos
+git add .
+git commit -m "Inserção se páginas html css e imagem"]
+git push
