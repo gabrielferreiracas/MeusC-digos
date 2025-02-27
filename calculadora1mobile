@@ -1,0 +1,48 @@
+import React, { useState} from 'react';
+import {ScrollView, StyleSheet, Text, TextInput, View, Button} from 'react-native';
+
+const App = () => {
+   const[numero01, setNumero01] = useState('');
+   const[numero02, setNumero02] = useState('');
+   const[resultado, setResultado] = useState(null);
+
+   const Somar = () => {
+     const soma = parseFloat(numero01) + parseFloat (numero02);
+     setResultado(soma);
+   };
+
+   return(
+     <ScrollView Style={styles.corpo}>
+      <Text style={styles.titulo}> CALCULADORA </Text>
+      <View style={styles.inputContainer}>
+        <TextInput style={styles.input} keyboardType="numeric"
+        value={numero01} onChangeText={setNumero01}/>
+        <TextInput style={styles.input} keyboardType="numeric"
+        value={numero02} onChangeText={setNumero02}/>
+      </View>
+      <Button style={styles.button}title="SOMAR" onPress={Somar}/>
+      {resultado != null && <Text style={styles.valor}>Resultado:{resultado}</Text>} 
+     </ScrollView>
+   );
+};
+
+const styles = StyleSheet.create({
+    corpo: {
+      justifyContent: 'center',
+      alignItems: 'center',
+      padding: 20
+    },
+    titulo: {
+      fontSize: 36,
+      fontWeight: 'bold'
+    },
+    input: {
+      borderColor: '#DCDcDC',
+      borderWidth: 5,
+
+    }
+ 
+    
+});
+
+export default App;
